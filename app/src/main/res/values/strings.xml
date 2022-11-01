@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CustomHidDevice</string>
+    <string name="led1_off">LED1 Off</string>
+    <string name="led1_blink">LED1 Blink</string>
+    <string name="read">Read</string>
+    <string name="sensor">Sensor</string>
+    <string name="device_status">Device status</string>
+    <string name="connected">Device connected</string>
+    <string name="disconnected">Device disconnected</string>
+    <string name="not_found">Device not found</string>
+</resources>

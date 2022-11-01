@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/led1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/led1_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/led1_off"
+            android:layout_marginStart="5dp"/>
+        <Button
+            android:id="@+id/led1_blink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/led1_blink"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="240dp"
+        android:layout_height= "2dp"
+        android:background="@color/grey" />
+    <LinearLayout
+        android:id="@+id/sensors_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/read_sensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/read"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:id="@+id/sensor_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/sensor"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="240dp"
+        android:layout_height= "2dp"
+        android:background="@color/grey" />
+    <LinearLayout
+        android:id="@+id/device_status_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/device_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/device_status"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>
