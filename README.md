@@ -1,13 +1,13 @@
 # UsbHid
-Another custom USB HID host library for Android. Inspired by:
-https://android.serverbox.ch/?p=549
-https://github.com/benlypan/UsbHid
-https://github.com/yutils/yutils/blob/master/utils/src/main/java/com/yujing/utils/YUsb.kt
+Another custom USB HID host library for Android. Inspired by:  
+https://android.serverbox.ch/?p=549  
+https://github.com/benlypan/UsbHid  
+https://github.com/yutils/yutils/blob/master/utils/src/main/java/com/yujing/utils/YUsb.kt  
 
 # Benefits
-Register device vid:pid and the library will notify you, i.e. via events,  if device is not found, connected, or disconnected.
-The library will request permission to use device (if needed)
-You can extend the UsbHidDevice class and include all your device related commands in the new class (see example app)
+- Register device vid:pid and the library will notify you, i.e. via events,  if device is not found, connected, or disconnected.  
+- The library will request permission to use device (if needed)  
+- You can extend the UsbHidDevice class and include all your device related commands in the new class (see example app)  
 
 # Usage
 You need to setup repositories to use github packages (see example app):
