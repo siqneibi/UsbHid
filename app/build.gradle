@@ -35,19 +35,16 @@ android {
         jvmTarget = '1.8'
     }
     repositories {
+        google()
+        mavenCentral()
         maven {
             name = "GitHubPackages"
-            /*  Configure path to the library hosted on GitHub Packages Registry
-             *  Replace UserID with package owner userID and REPOSITORY with the repository name
-             *  e.g. "https://maven.pkg.github.com/enefce/AndroidLibraryForGitHubPackagesDemo"
-             */
-            //url = uri("https://maven.pkg.github.com/UserID/REPOSITORY")
             url = uri("https://maven.pkg.github.com/siqneibi/UsbHid")
 
             credentials {
                 /**Create github.properties in root project folder file with gpr.usr=GITHUB_USER_ID  & gpr.key=PERSONAL_ACCESS_TOKEN**/
-                username = githubProperties['gpr.usr'] ?: System.getenv("GPR_USER")
-                password = githubProperties['gpr.key'] ?: System.getenv("GPR_API_KEY")
+                username = githubProperties['gpr.usr']
+                password = githubProperties['gpr.key']
             }
         }
     }
@@ -63,4 +60,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation project(':usbhid')
+    //implementation 'co.sedco:usbhid:0.2.0'
 }

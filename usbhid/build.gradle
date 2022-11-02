@@ -39,7 +39,7 @@ githubProperties.load(new FileInputStream(rootProject.file("github.properties"))
 
 
 def getVersionName = { ->
-    return "0.1.0"
+    return "0.2.0"
 }
 
 def getArtificatId = { ->
@@ -59,15 +59,12 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            /** Configure path of your package repository on Github
-             *  Replace GITHUB_USERID with your/organisation Github userID and REPOSITORY with the repository name on GitHub
-             */
             url = uri("https://maven.pkg.github.com/siqneibi/UsbHid")
 
             credentials {
                 /**Create github.properties in root project folder file with gpr.usr=GITHUB_USER_ID  & gpr.key=PERSONAL_ACCESS_TOKEN**/
-                username = githubProperties['gpr.usr'] ?: System.getenv("GPR_USER")
-                password = githubProperties['gpr.key'] ?: System.getenv("GPR_API_KEY")
+                username = githubProperties['gpr.usr']
+                password = githubProperties['gpr.key']
             }
         }
     }
