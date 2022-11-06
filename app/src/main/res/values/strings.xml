@@ -8,4 +8,5 @@
     <string name="connected">Device connected</string>
     <string name="disconnected">Device disconnected</string>
     <string name="not_found">Device not found</string>
+    <string name="permission_denied">Permission denied by user</string>
 </resources>

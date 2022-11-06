@@ -38,6 +38,12 @@ class  MainActivity : Activity() {
                 deviceStatusText.text = getString(R.string.not_found)
             }
         }
+        override fun onDevicePermissionDenied() {
+            Log.d(TAG,"onDevicePermissionDenied")
+            runOnUiThread {
+                deviceStatusText.text = getString(R.string.permission_denied)
+            }
+        }
     }
 
     public override fun onCreate(savedInstanceState: Bundle?) {

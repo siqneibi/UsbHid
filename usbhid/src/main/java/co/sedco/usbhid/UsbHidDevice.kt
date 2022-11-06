@@ -195,6 +195,12 @@ open class UsbHidDevice(appContext: Context, connectionHandler: IUsbConnectionHa
                                 open()
                             }
                         }
+                        else {
+                            if (device != null) {
+                                hasPermission = false
+                                connectionHandler.onDevicePermissionDenied()
+                            }
+                        }
                     }
                 }
 

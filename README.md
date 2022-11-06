@@ -30,7 +30,7 @@ You need to setup repositories to use github packages (see example app):
 
 And add following line to dependencies section:
 ```
-implementation 'co.sedco:usbhid:0.2.0'
+implementation 'co.sedco:usbhid:0.3.0'
 ```
 
 # QuickStart
@@ -46,6 +46,9 @@ Create a connection handler in your activity
         }
         override fun onDeviceNotFound() {
             Log.d(TAG,"onDeviceNotFound")
+        }
+        override fun onDevicePermissionDenied() {
+            Log.d(TAG,"onDevicePermissionDenied")
         }
     }
 ```

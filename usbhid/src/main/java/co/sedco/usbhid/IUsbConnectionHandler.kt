@@ -4,4 +4,5 @@ interface IUsbConnectionHandler {
     fun onDeviceConnected()
     fun onDeviceDisconnected()
     fun onDeviceNotFound()
+    fun onDevicePermissionDenied()
 }
